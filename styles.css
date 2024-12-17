@@ -26,43 +26,48 @@ header {
 
 h1 {
     font-size: 2.5rem;
-    color: #00ff00; /* Neon Green */
-    text-shadow: 3px 3px #001a00; /* Pixelated effect */
+    color: #00ff00;
+    text-shadow: 3px 3px #001a00;
 }
 
 /* Navigation Buttons */
 nav {
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .pixel-button {
     display: inline-block;
-    background-color: #006600; /* Dark green */
-    color: #00ff00; /* Bright text */
+    background-color: #006600;
+    color: #00ff00;
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
     border: 2px solid #00aa00;
-    box-shadow: 4px 4px #001a00; /* Pixelated shadow */
+    box-shadow: 4px 4px #001a00;
     text-transform: uppercase;
-    border-radius: 8px; /* Slightly rounded edges for buttons */
+    border-radius: 8px;
     transition: all 0.2s ease;
 }
 
 .pixel-button:hover {
     background-color: #00aa00;
     color: #003300;
-    box-shadow: 2px 2px #001a00; /* Shrink shadow */
+    box-shadow: 2px 2px #001a00;
 }
 
 /* Main Content */
 main {
-    background-color: #002200; /* Darker green box */
+    background-color: #002200;
     border: 4px double #00aa00;
     margin: 20px auto;
     padding: 20px;
+    width: 90%;
     max-width: 600px;
     text-align: center;
 }
@@ -77,6 +82,28 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
     font-size: 1.1rem;
+}
+
+/* Gallery Images */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #00aa00;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img.enlarged {
+    transform: scale(2);
+    z-index: 1000;
 }
 
 /* Marquee (Retro Scrolling Text) */
@@ -95,4 +122,49 @@ footer {
     border-top: 3px solid #00aa00;
     color: #00ff00;
     font-size: 0.9rem;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .pixel-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pixel-button {
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .gallery img {
+        max-width: 150px;
+    }
 }
