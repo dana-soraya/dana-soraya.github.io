@@ -54,7 +54,7 @@ h2 {
 /* Navigation Buttons */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center horizontally */
     flex-wrap: wrap;
     gap: 10px;
     margin: 10px 0;
@@ -73,6 +73,7 @@ nav {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
     text-transform: uppercase;
     border-radius: 8px; /* Slightly rounded edges */
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -165,23 +166,26 @@ footer {
 }
 
 @media (max-width: 480px) {
+    nav {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 8px;
+    }
+
+    .pixel-button {
+        width: 80%; /* Buttons take up 80% of screen width */
+        max-width: 300px; /* Prevent overly wide buttons */
+        margin: 5px auto; /* Centered horizontally */
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
     h1 {
         font-size: 1.8rem;
     }
 
     h2 {
         font-size: 1.2rem;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .pixel-button {
-        width: 80%;
-        font-size: 0.8rem;
-        padding: 6px 12px;
     }
 
     main {
