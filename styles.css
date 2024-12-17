@@ -6,13 +6,13 @@
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
 
 /* Body */
 body {
-    font-family: 'Baloo 2', sans-serif; /* Round and bubbly font */
-    background-color: #1E1E1E; /* Dark Grey Background */
-    color: #E0E0E0; /* Light Grey Text */
+    font-family: 'Baloo 2', sans-serif; /* Round and bubbly font for body text */
+    background-color: #F4F4F9; /* Bright off-white background */
+    color: #333333; /* Dark grey text */
     text-align: center;
     line-height: 1.6;
     display: flex;
@@ -24,29 +24,31 @@ body {
 
 /* Header */
 header {
-    background-color: #2C2C2C; /* Darker Grey Background */
+    background-color: #DFF6FF; /* Soft Blue Glass */
     padding: 20px;
     margin-bottom: 20px;
-    border-bottom: 4px solid #A8D5BA; /* Green Glass Accent */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid #6BAED6; /* Bright Blue Accent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     border-radius: 10px;
 }
 
+h1, h2 {
+    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
+    color: #333333; /* Dark Grey */
+    text-shadow: 1px 1px #CDE1F5; /* Subtle blue glow */
+}
+
 h1 {
-    font-family: 'Playfair Display', serif; /* Modern Serif Font */
-    font-size: 2.5rem;
-    color: #A8D5BA; /* Green Glass */
-    text-shadow: 2px 2px #000000; /* Subtle Black Shadow */
+    font-size: 2.8rem;
+    letter-spacing: 2px;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif; /* Modern Serif Font */
-    color: #A8D5BA; /* Green Glass */
-    margin-bottom: 15px;
     font-size: 1.8rem;
-    text-shadow: 1px 1px #333333; /* Subtle Grey Shadow */
+    margin-bottom: 15px;
+    color: #6BAED6; /* Bright Blue */
 }
 
 /* Navigation Buttons */
@@ -60,42 +62,42 @@ nav {
 
 .pixel-button {
     display: inline-block;
-    background-color: #333333; /* Dark Grey */
+    background-color: #6BAED6; /* Bright Blue */
     color: #FFFFFF; /* White Text */
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #A8D5BA; /* Green Glass Border */
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.5); /* Dark Shadow */
+    border: 2px solid #4A90E2; /* Slightly darker blue */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
     text-transform: uppercase;
-    border-radius: 12px; /* Rounded edges */
+    border-radius: 8px; /* Slightly rounded edges */
     transition: all 0.3s ease;
 }
 
 .pixel-button:hover {
-    background-color: #A8D5BA; /* Green Glass */
-    color: #000000; /* Black Text */
-    box-shadow: 2px 2px #333333; /* Grey Shadow Shrink */
+    background-color: #CDE1F5; /* Light Blue Hover */
+    color: #333333; /* Dark Grey Text */
+    box-shadow: 0 0 10px #4A90E2; /* Bright Blue Glow */
     transform: scale(1.05);
 }
 
 /* Main Content */
 main {
-    background-color: #2C2C2C; /* Darker Grey */
-    border: 4px solid #A8D5BA; /* Green Glass Border */
+    background-color: #FFFFFF; /* Pure White */
+    border: 4px solid #CDE1F5; /* Light Blue Border */
     margin: 20px auto;
     padding: 20px;
     width: 100%;
     max-width: 600px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
 }
 
 p {
-    color: #E0E0E0; /* Light Grey */
+    color: #333333; /* Dark Grey Text */
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
@@ -113,15 +115,15 @@ p {
     max-width: 200px;
     height: auto;
     cursor: pointer;
-    border: 3px solid #A8D5BA; /* Green Glass Border */
+    border: 3px solid #6BAED6; /* Bright Blue Border */
     border-radius: 8px;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.5); /* Dark Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
-    box-shadow: 4px 4px #A8D5BA; /* Green Glass Glow */
+    box-shadow: 0 4px 12px #4A90E2; /* Bright Blue Glow */
 }
 
 .gallery img.enlarged {
@@ -131,12 +133,12 @@ p {
 
 /* Footer */
 footer {
-    background-color: #2C2C2C; /* Darker Grey */
+    background-color: #DFF6FF; /* Soft Blue Glass */
     padding: 10px;
-    border-top: 3px solid #A8D5BA; /* Green Glass Border */
-    color: #E0E0E0; /* Light Grey */
+    border-top: 3px solid #6BAED6; /* Bright Blue Accent */
+    color: #333333; /* Dark Grey */
     font-size: 0.9rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     border-radius: 10px;
@@ -145,11 +147,11 @@ footer {
 /* Responsive Design with Media Queries */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .pixel-button {
@@ -168,7 +170,7 @@ footer {
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     nav {
