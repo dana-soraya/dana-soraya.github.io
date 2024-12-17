@@ -8,12 +8,14 @@
 /* Import Google Font: Baloo 2 */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
 
+/* Body */
 body {
     font-family: 'Baloo 2', sans-serif; /* Round and bubbly font */
     background-color: #003300; /* Dark Green Background */
     color: #00FF00; /* Bright Green Text */
     text-align: center;
     padding: 20px;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -22,12 +24,14 @@ header {
     padding: 20px;
     margin-bottom: 20px;
     border: 3px solid #00aa00;
+    box-shadow: 0 4px 8px #001a00;
 }
 
 h1 {
     font-size: 2.5rem;
     color: #00ff00;
-    text-shadow: 3px 3px #001a00;
+    text-shadow: 3px 3px #001a00; /* Pixelated effect */
+    margin-bottom: 10px;
 }
 
 /* Navigation Buttons */
@@ -41,8 +45,8 @@ nav {
 
 .pixel-button {
     display: inline-block;
-    background-color: #006600;
-    color: #00ff00;
+    background-color: #006600; /* Dark green */
+    color: #00ff00; /* Bright text */
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
@@ -51,7 +55,7 @@ nav {
     border: 2px solid #00aa00;
     box-shadow: 4px 4px #001a00;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 12px; /* More rounded */
     transition: all 0.2s ease;
 }
 
@@ -59,6 +63,7 @@ nav {
     background-color: #00aa00;
     color: #003300;
     box-shadow: 2px 2px #001a00;
+    transform: scale(1.05);
 }
 
 /* Main Content */
@@ -70,12 +75,15 @@ main {
     width: 90%;
     max-width: 600px;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px #001a00;
 }
 
 h2 {
     color: #00ff00;
     text-shadow: 2px 2px #001a00;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
 p {
@@ -98,7 +106,13 @@ p {
     height: auto;
     cursor: pointer;
     border: 2px solid #00aa00;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 2px 2px #001a00;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    box-shadow: 4px 4px #003300;
 }
 
 .gallery img.enlarged {
@@ -142,6 +156,10 @@ footer {
     p {
         font-size: 1rem;
     }
+
+    .gallery img {
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -165,6 +183,6 @@ footer {
     }
 
     .gallery img {
-        max-width: 150px;
+        max-width: 120px;
     }
 }
