@@ -5,8 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Import Google Font: Baloo 2 */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: "Arial", monospace; /* Retro font */
+    font-family: 'Baloo 2', sans-serif; /* Round and bubbly font */
     background-color: #003300; /* Dark Green Background */
     color: #00FF00; /* Bright Green Text */
     text-align: center;
@@ -44,6 +47,7 @@ nav {
     border: 2px solid #00aa00;
     box-shadow: 4px 4px #001a00; /* Pixelated shadow */
     text-transform: uppercase;
+    border-radius: 8px; /* Slightly rounded edges for buttons */
     transition: all 0.2s ease;
 }
 
@@ -72,6 +76,7 @@ h2 {
 p {
     line-height: 1.5;
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 /* Marquee (Retro Scrolling Text) */
