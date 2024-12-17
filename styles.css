@@ -11,8 +11,8 @@
 /* Body */
 body {
     font-family: 'Baloo 2', sans-serif; /* Round and bubbly font for body text */
-    background-color: #F4F4F9; /* Bright off-white background */
-    color: #333333; /* Dark grey text */
+    background-color: #1B1F23; /* Darker background for a modern look */
+    color: #E0E0E0; /* Light grey text for readability */
     text-align: center;
     line-height: 1.6;
     display: flex;
@@ -22,42 +22,44 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
-header {
-    background-color: #DFFFE0; /* Soft Green Glass */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-bottom: 4px solid #6BAE6A; /* Bright Green Accent */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+/* Unified Section */
+section {
+    background-color: #22272C; /* Slightly lighter dark grey for content area */
+    border: 4px solid #4A904E; /* Bright Green Accent Border */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle Shadow for depth */
+    padding: 30px;
     max-width: 800px;
-    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
 }
 
-h1, h2 {
-    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
-    color: #333333; /* Dark Grey */
-    text-shadow: 1px 1px #D5F8D2; /* Subtle Green Glow */
+/* Header */
+header {
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
+    font-size: 3rem;
+    color: #6BAE6A; /* Bright Green */
+    text-shadow: 2px 2px #4A904E; /* Subtle green shadow */
+    margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
 /* Enhanced h2 Styling */
 h2 {
-    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
+    font-family: 'Orbitron', sans-serif;
     color: #6BAE6A; /* Bright Green */
     font-size: 1.8rem;
     margin-bottom: 15px;
     text-shadow: 1px 1px #4A904E; /* Subtle green shadow */
     letter-spacing: 1px;
-    position: relative; /* Allows for underline decoration positioning */
-    padding: 10px 0; /* Spacing for readability */
+    position: relative;
+    padding: 10px 0;
 }
 
-/* Add an underline effect with a green bar */
 h2::after {
     content: "";
     position: absolute;
@@ -66,162 +68,95 @@ h2::after {
     width: 80px;
     height: 4px;
     background-color: #DFFFE0; /* Light green accent */
-    transform: translateX(-50%); /* Centers the underline */
-    border-radius: 2px; /* Soft rounded edges for modern style */
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
-/* Optional: Background Highlight */
-h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1.2em;
-    background-color: rgba(223, 255, 224, 0.2); /* Light transparent green */
-    z-index: -1;
-    transform: translateY(-50%);
-    border-radius: 4px;
+/* Paragraphs */
+p {
+    color: #E0E0E0; /* Light grey text */
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 /* Navigation Buttons */
 nav {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .pixel-button {
     display: inline-block;
     background-color: #6BAE6A; /* Bright Green */
-    color: #FFFFFF; /* White Text */
+    color: #1B1F23; /* Dark Text */
     padding: 10px 20px;
-    margin: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #4A904E; /* Slightly darker green */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+    border: 2px solid #4A904E; /* Darker Green */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
-    border-radius: 8px; /* Slightly rounded edges */
-    text-align: center;
+    border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .pixel-button:hover {
-    background-color: #D5F8D2; /* Light Green Hover */
+    background-color: #DFFFE0; /* Light Green Hover */
     color: #333333; /* Dark Grey Text */
-    box-shadow: 0 0 10px #4A904E; /* Bright Green Glow */
+    box-shadow: 0 0 10px #6BAE6A; /* Green Glow */
     transform: scale(1.05);
 }
 
-/* Main Content */
-main {
-    background-color: #FFFFFF; /* Pure White */
-    border: 4px solid #D5F8D2; /* Light Green Border */
-    margin: 20px auto;
-    padding: 20px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
-}
-
-p {
-    color: #333333; /* Dark Grey Text */
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-
-/* Gallery Images */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.gallery img {
+/* Images */
+img {
     width: 100%;
     max-width: 200px;
-    height: auto;
-    cursor: pointer;
-    border: 3px solid #6BAE6A; /* Bright Green Border */
+    margin: 10px 0;
+    border: 3px solid #6BAE6A; /* Green Border */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px #4A904E; /* Bright Green Glow */
-}
-
-.gallery img.enlarged {
-    transform: scale(2);
-    z-index: 1000;
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px #6BAE6A;
 }
 
 /* Footer */
 footer {
-    background-color: #DFFFE0; /* Soft Green Glass */
-    padding: 10px;
-    border-top: 3px solid #6BAE6A; /* Bright Green Accent */
-    color: #333333; /* Dark Grey */
+    margin-top: 20px;
+    color: #6BAE6A; /* Bright Green */
     font-size: 0.9rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
 }
 
-/* Responsive Design with Media Queries */
+/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
-
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
-
+    p {
+        font-size: 1rem;
+    }
     .pixel-button {
         padding: 8px 15px;
         font-size: 0.9rem;
     }
-
-    main {
-        padding: 15px;
-    }
 }
-
 @media (max-width: 480px) {
-    nav {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center align buttons */
-        gap: 8px;
-    }
-
-    .pixel-button {
-        width: 80%; /* Buttons take up 80% of screen width */
-        max-width: 300px; /* Prevent overly wide buttons */
-        margin: 5px auto; /* Centered horizontally */
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
-
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
-
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
-
-    main {
-        padding: 10px;
+    .pixel-button {
+        width: 80%;
     }
 }
