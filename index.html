@@ -3,72 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Slow Website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Slow Website</h1>
+        <h1>Welcome to My Website!</h1>
         <nav>
-            <button onclick="openTab('about')">About Me</button>
-            <button onclick="openTab('blog')">Blog</button>
-            <button onclick="openTab('gallery')">Gallery</button>
-            <button onclick="openTab('music')">Music</button>
+            <a href="index.html" class="pixel-button">About Me</a>
+            <a href="blog.html" class="pixel-button">Blog</a>
+            <a href="gallery.html" class="pixel-button">Gallery</a>
+            <a href="music.html" class="pixel-button">Music</a>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <!-- About Section -->
-        <section id="about" class="tab-content active">
-            <h2>About Me</h2>
-            <p>Hello! I'm a creative individual who loves to share art, thoughts, and music with the world.</p>
-        </section>
+        <h2>About Me</h2>
+        <p>Hello! Welcome to my website. </p>
 
-        <!-- Blog Section -->
-        <section id="blog" class="tab-content">
-            <h2>Blog</h2>
-            <p>Welcome to my blog! Stay tuned for updates and stories.</p>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="tab-content">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/200" alt="Image 1" onclick="toggleImageSize(this)">
-                <img src="https://via.placeholder.com/200" alt="Image 2" onclick="toggleImageSize(this)">
-                <img src="https://via.placeholder.com/200" alt="Image 3" onclick="toggleImageSize(this)">
-            </div>
-        </section>
-
-        <!-- Music Section -->
-        <section id="music" class="tab-content">
-            <h2>Music</h2>
-            <p>Here are some of my favorite tunes!</p>
-            <audio controls>
-                <source src="sample-music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
+        <!-- Optional: Scrolling marquee -->
+        <marquee>🎉 Hello! 🎉</marquee>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>Made with ❤️ in black, pink, green, and blue.</p>
+        <p>© 2024 | Dana / Soraya ALem</p>
     </footer>
-
-    <script>
-        // Tab navigation
-        function openTab(tabId) {
-            const sections = document.querySelectorAll('.tab-content');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(tabId).classList.add('active');
-        }
-
-        // Gallery image toggle
-        function toggleImageSize(image) {
-            image.classList.toggle('enlarged');
-        }
-    </script>
 </body>
 </html>
