@@ -5,32 +5,26 @@
     box-sizing: border-box;
 }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&family=Great+Vibes&display=swap');
-
-/* Unified Section - Full Page Width */
+/* Unified Section */
 section {
-    background-color: #22272C; /* Slightly lighter dark grey for content area */
-    border: 4px solid #4A904E; /* Bright Green Accent Border */
+    background-color: #22272C;
+    border: 4px solid #4A904E;
     border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle Shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     padding: 30px;
-    width: 90%; /* Use 90% of the screen width */
-    max-width: 1200px; /* Cap the width on large screens */
-    margin: 20px auto; /* Center the section horizontally */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     text-align: center;
 }
 
 /* Body */
 body {
     font-family: 'Baloo 2', sans-serif;
-    background-color: #1B1F23; /* Darker background */
-    color: #E0E0E0; /* Light grey text */
+    background-color: #1B1F23;
+    color: #E0E0E0;
     text-align: center;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
     min-height: 100vh;
 }
@@ -43,16 +37,15 @@ header {
 h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
-    color: #6BAE6A; /* Bright Green */
+    color: #6BAE6A;
     text-shadow: 2px 2px #4A904E;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
 
-/* Enhanced h2 Styling */
 h2 {
     font-family: 'Orbitron', sans-serif;
-    color: #6BAE6A; /* Bright Green */
+    color: #6BAE6A;
     font-size: 1.8rem;
     margin-bottom: 15px;
     text-shadow: 1px 1px #4A904E;
@@ -92,7 +85,7 @@ nav {
 .pixel-button {
     display: inline-block;
     background-color: #6BAE6A;
-    color: #1B1F23; /* Dark Text */
+    color: #1B1F23;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -164,6 +157,7 @@ footer {
         font-size: 0.9rem;
     }
 }
+
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
