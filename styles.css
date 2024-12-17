@@ -6,14 +6,13 @@
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&family=Great+Vibes&display=swap');
 
 /* Body */
 body {
-    font-family: 'Baloo 2', sans-serif; /* Round and bubbly font for body text */
-    background-color: #1B1F23; /* Darker background for a modern look */
-    color: #E0E0E0; /* Light grey text for readability */
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #1B1F23; /* Darker background */
+    color: #E0E0E0; /* Light grey text */
     text-align: center;
     line-height: 1.6;
     display: flex;
@@ -23,28 +22,16 @@ body {
     min-height: 100vh;
 }
 
-/* Unified Section */
-section {
-    background-color: #22272C; /* Slightly lighter dark grey for content area */
-    border: 4px solid #4A904E; /* Bright Green Accent Border */
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle Shadow for depth */
-    padding: 30px;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-
 /* Header */
 header {
     margin-bottom: 20px;
 }
 
 h1 {
-    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
+    font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
     color: #6BAE6A; /* Bright Green */
-    text-shadow: 2px 2px #4A904E; /* Subtle green shadow */
+    text-shadow: 2px 2px #4A904E;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
@@ -55,7 +42,7 @@ h2 {
     color: #6BAE6A; /* Bright Green */
     font-size: 1.8rem;
     margin-bottom: 15px;
-    text-shadow: 1px 1px #4A904E; /* Subtle green shadow */
+    text-shadow: 1px 1px #4A904E;
     letter-spacing: 1px;
     position: relative;
     padding: 10px 0;
@@ -68,14 +55,14 @@ h2::after {
     bottom: 0;
     width: 80px;
     height: 4px;
-    background-color: #DFFFE0; /* Light green accent */
+    background-color: #DFFFE0;
     transform: translateX(-50%);
     border-radius: 2px;
 }
 
 /* Paragraphs */
 p {
-    color: #E0E0E0; /* Light grey text */
+    color: #E0E0E0;
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
@@ -91,13 +78,13 @@ nav {
 
 .pixel-button {
     display: inline-block;
-    background-color: #6BAE6A; /* Bright Green */
+    background-color: #6BAE6A;
     color: #1B1F23; /* Dark Text */
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #4A904E; /* Darker Green */
+    border: 2px solid #4A904E;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     border-radius: 8px;
@@ -105,24 +92,24 @@ nav {
 }
 
 .pixel-button:hover {
-    background-color: #DFFFE0; /* Light Green Hover */
-    color: #333333; /* Dark Grey Text */
-    box-shadow: 0 0 10px #6BAE6A; /* Green Glow */
+    background-color: #DFFFE0;
+    color: #333333;
+    box-shadow: 0 0 10px #6BAE6A;
     transform: scale(1.05);
 }
 
-/* Global Link Styling */
-a {
-    font-family: 'Dancing Script', cursive !important; /* Force Cursive Font */
-    text-decoration: none; /* Remove underlines */
-    color: #6BAE6A; /* Bright Green */
-    font-size: 1.1rem; /* Slightly larger text for visibility */
+/* Content Links Styling */
+section a:not(.pixel-button) {
+    font-family: 'Great Vibes', cursive;
+    color: #6BAE6A;
+    text-decoration: none;
+    font-size: 1.2rem;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-a:hover {
-    color: #DFFFE0; /* Light Green on Hover */
-    text-shadow: 0 0 5px #6BAE6A; /* Subtle Green Glow */
+section a:not(.pixel-button):hover {
+    color: #DFFFE0;
+    text-shadow: 0 0 5px #6BAE6A;
 }
 
 /* Images */
@@ -130,7 +117,7 @@ img {
     width: 100%;
     max-width: 200px;
     margin: 10px 0;
-    border: 3px solid #6BAE6A; /* Green Border */
+    border: 3px solid #6BAE6A;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,7 +131,7 @@ img:hover {
 /* Footer */
 footer {
     margin-top: 20px;
-    color: #6BAE6A; /* Bright Green */
+    color: #6BAE6A;
     font-size: 0.9rem;
 }
 
