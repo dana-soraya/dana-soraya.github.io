@@ -46,8 +46,8 @@ h1 {
 /* Enhanced h2 Styling */
 h2 {
     font-family: 'Great Vibes', cursive;
-    color: #6BAE6A; /* Bright Green */
-    font-size: 2.5rem; /* Increased font size */
+    color: #6BAE6A;
+    font-size: 2.5rem; /* Larger font size */
     margin-bottom: 15px;
     text-shadow: 1px 1px #4A904E;
     letter-spacing: 1px;
@@ -60,7 +60,7 @@ h2::after {
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 100px; /* Wider underline */
+    width: 100px;
     height: 4px;
     background-color: #DFFFE0;
     transform: translateX(-50%);
@@ -116,22 +116,8 @@ section a:not(.pixel-button) {
 }
 
 section a:not(.pixel-button):hover {
-    color: #DFFFE0; /* Light Green Hover */
-    text-shadow: 0 0 5px #9a64ff; /* Subtle Purple Glow */
-}
-
-/* Content Links Styling */
-section a:not(.pixel-button) {
-    font-family: 'Great Vibes', cursive;
-    color: #6BAE6A;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-section a:not(.pixel-button):hover {
     color: #DFFFE0;
-    text-shadow: 0 0 5px #6BAE6A;
+    text-shadow: 0 0 5px #9a64ff; /* Subtle Purple Glow */
 }
 
 /* Images */
@@ -152,20 +138,15 @@ img:hover {
 
 /* Unified Player Styling (SoundCloud and Bandcamp) */
 iframe {
-    display: block; /* Ensures each player is a block element */
-    margin: 20px auto; /* Centers horizontally and adds vertical spacing */
-    width: 90%; /* Responsive width: 90% of the parent container */
-    max-width: 800px; /* Caps width for larger screens */
-    border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+    display: block;
+    margin: 20px auto; /* Centers horizontally */
+    width: 90%; /* Consistent responsive width */
+    max-width: 800px; /* Cap width for larger screens */
+    border-radius: 10px;
 }
 
-/* Specific Height Adjustments */
-iframe[src*="soundcloud"] {
-    height: 400px; /* Set consistent height for SoundCloud players */
-}
-
-iframe[src*="bandcamp"] {
-    height: 400px; /* Set consistent height for Bandcamp players */
+iframe[src*="soundcloud"], iframe[src*="bandcamp"] {
+    height: 400px; /* Ensure both players have the same height */
 }
 
 /* Footer */
@@ -181,7 +162,7 @@ footer {
         font-size: 2.4rem;
     }
     h2 {
-        font-size: 2rem; /* Adjust for tablets */
+        font-size: 2rem;
     }
     p {
         font-size: 1rem;
@@ -191,7 +172,7 @@ footer {
         font-size: 0.9rem;
     }
     iframe {
-        height: 300px; /* Smaller player height */
+        height: 300px;
     }
 }
 
@@ -200,12 +181,12 @@ footer {
         font-size: 2rem;
     }
     h2 {
-        font-size: 1.8rem; /* Adjust for mobile */
+        font-size: 1.8rem;
     }
     .pixel-button {
         width: 80%;
     }
     iframe {
-        height: 250px; /* Compact height for mobile screens */
+        height: 250px;
     }
 }
