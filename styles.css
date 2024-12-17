@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000; /* Black background */
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, pink, green, blue);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav button {
+    background-color: black;
+    color: pink;
+    border: 2px solid pink;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: pink;
+    color: black;
+}
+
+/* Main Sections */
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 2px solid green;
+    background-color: rgba(0, 255, 0, 0.1); /* Transparent Green */
+    animation: slideIn 1.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img.enlarged {
+    transform: scale(2);
+    z-index: 1000;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: pink;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
