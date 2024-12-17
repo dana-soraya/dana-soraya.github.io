@@ -43,10 +43,11 @@ h1 {
     letter-spacing: 2px;
 }
 
+/* Enhanced h2 Styling */
 h2 {
     font-family: 'Great Vibes', cursive;
-    color: #6BAE6A;
-    font-size: 1.8rem;
+    color: #6BAE6A; /* Bright Green */
+    font-size: 2.5rem; /* Increased font size */
     margin-bottom: 15px;
     text-shadow: 1px 1px #4A904E;
     letter-spacing: 1px;
@@ -59,7 +60,7 @@ h2::after {
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 80px;
+    width: 100px; /* Wider underline */
     height: 4px;
     background-color: #DFFFE0;
     transform: translateX(-50%);
@@ -153,20 +154,6 @@ iframe[src*="bandcamp"] {
     height: 400px; /* Set consistent height for Bandcamp players */
 }
 
-/* Responsive Behavior */
-@media (max-width: 768px) {
-    iframe {
-        width: 95%; /* Slightly wider on smaller screens */
-        height: 300px; /* Reduce height on tablets and small devices */
-    }
-}
-
-@media (max-width: 480px) {
-    iframe {
-        width: 100%; /* Use full screen width on mobile */
-        height: 250px; /* Compact height for mobile screens */
-    }
-
 /* Footer */
 footer {
     margin-top: 20px;
@@ -174,13 +161,13 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Behavior */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.4rem;
     }
     h2 {
-        font-size: 1.6rem;
+        font-size: 2rem; /* Adjust for tablets */
     }
     p {
         font-size: 1rem;
@@ -189,6 +176,9 @@ footer {
         padding: 8px 15px;
         font-size: 0.9rem;
     }
+    iframe {
+        height: 300px; /* Smaller player height */
+    }
 }
 
 @media (max-width: 480px) {
@@ -196,9 +186,12 @@ footer {
         font-size: 2rem;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.8rem; /* Adjust for mobile */
     }
     .pixel-button {
         width: 80%;
+    }
+    iframe {
+        height: 250px; /* Compact height for mobile screens */
     }
 }
