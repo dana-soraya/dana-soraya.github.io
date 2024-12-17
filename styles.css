@@ -135,6 +135,38 @@ img:hover {
     box-shadow: 0 4px 12px #6BAE6A;
 }
 
+/* Unified Player Styling (SoundCloud and Bandcamp) */
+iframe {
+    display: block; /* Ensures each player is a block element */
+    margin: 20px auto; /* Centers horizontally and adds vertical spacing */
+    width: 90%; /* Responsive width: 90% of the parent container */
+    max-width: 800px; /* Caps width for larger screens */
+    border-radius: 10px; /* Optional: Adds rounded corners for a modern look */
+}
+
+/* Specific Height Adjustments */
+iframe[src*="soundcloud"] {
+    height: 400px; /* Set consistent height for SoundCloud players */
+}
+
+iframe[src*="bandcamp"] {
+    height: 400px; /* Set consistent height for Bandcamp players */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    iframe {
+        width: 95%; /* Slightly wider on smaller screens */
+        height: 300px; /* Reduce height on tablets and small devices */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        width: 100%; /* Use full screen width on mobile */
+        height: 250px; /* Compact height for mobile screens */
+    }
+
 /* Footer */
 footer {
     margin-top: 20px;
