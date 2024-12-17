@@ -7,6 +7,7 @@
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* Body */
 body {
@@ -108,6 +109,20 @@ nav {
     color: #333333; /* Dark Grey Text */
     box-shadow: 0 0 10px #6BAE6A; /* Green Glow */
     transform: scale(1.05);
+}
+
+/* Global Link Styling */
+a {
+    font-family: 'Dancing Script', cursive !important; /* Force Cursive Font */
+    text-decoration: none; /* Remove underlines */
+    color: #6BAE6A; /* Bright Green */
+    font-size: 1.1rem; /* Slightly larger text for visibility */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #DFFFE0; /* Light Green on Hover */
+    text-shadow: 0 0 5px #6BAE6A; /* Subtle Green Glow */
 }
 
 /* Images */
