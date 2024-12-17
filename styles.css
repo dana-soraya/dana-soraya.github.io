@@ -45,10 +45,43 @@ h1 {
     letter-spacing: 2px;
 }
 
+/* Enhanced h2 Styling */
 h2 {
+    font-family: 'Orbitron', sans-serif; /* Techno digital clock font */
+    color: #6BAE6A; /* Bright Green */
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #6BAE6A; /* Bright Green */
+    text-shadow: 1px 1px #4A904E; /* Subtle green shadow */
+    letter-spacing: 1px;
+    position: relative; /* Allows for underline decoration positioning */
+    padding: 10px 0; /* Spacing for readability */
+}
+
+/* Add an underline effect with a green bar */
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 80px;
+    height: 4px;
+    background-color: #DFFFE0; /* Light green accent */
+    transform: translateX(-50%); /* Centers the underline */
+    border-radius: 2px; /* Soft rounded edges for modern style */
+}
+
+/* Optional: Background Highlight */
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1.2em;
+    background-color: rgba(223, 255, 224, 0.2); /* Light transparent green */
+    z-index: -1;
+    transform: translateY(-50%);
+    border-radius: 4px;
 }
 
 /* Navigation Buttons */
