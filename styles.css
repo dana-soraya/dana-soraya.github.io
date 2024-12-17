@@ -5,8 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Import Google Font: Baloo 2 */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+/* Global styles */
+body {
+    font-family: 'Baloo 2', sans-serif; /* Round and bubbly font */
+    color: #00FF00;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header text */
+h1, h2 {
+    font-family: 'Dancing Script', cursive; /* Cursive font */
+    color: #00FFFF;
+    text-shadow: 2px 2px #000000;
+}
 
 /* Body */
 body {
