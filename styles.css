@@ -6,95 +6,88 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #000; /* Black background */
+    font-family: "Courier New", Courier, monospace; /* Retro font */
+    background-color: #003300; /* Dark Green Background */
+    color: #00FF00; /* Bright Green Text */
     text-align: center;
-    animation: fadeIn 2s ease-in;
+    padding: 20px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, pink, green, blue);
+    background-color: #004d00; /* Slightly lighter green */
     padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #00aa00;
 }
 
 h1 {
     font-size: 2.5rem;
+    color: #00ff00; /* Neon Green */
+    text-shadow: 3px 3px #001a00; /* Pixelated effect */
 }
 
-/* Navigation */
-nav button {
-    background-color: black;
-    color: pink;
-    border: 2px solid pink;
-    margin: 5px;
+/* Navigation Buttons */
+nav {
+    margin: 10px;
+}
+
+.pixel-button {
+    display: inline-block;
+    background-color: #006600; /* Dark green */
+    color: #00ff00; /* Bright text */
     padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1rem;
+    border: 2px solid #00aa00;
+    box-shadow: 4px 4px #001a00; /* Pixelated shadow */
+    text-transform: uppercase;
+    transition: all 0.2s ease;
 }
 
-nav button:hover {
-    background-color: pink;
-    color: black;
+.pixel-button:hover {
+    background-color: #00aa00;
+    color: #003300;
+    box-shadow: 2px 2px #001a00; /* Shrink shadow */
 }
 
-/* Main Sections */
+/* Main Content */
 main {
+    background-color: #002200; /* Darker green box */
+    border: 4px double #00aa00;
     margin: 20px auto;
-    max-width: 800px;
-}
-
-.tab-content {
-    display: none;
     padding: 20px;
-    border: 2px solid green;
-    background-color: rgba(0, 255, 0, 0.1); /* Transparent Green */
-    animation: slideIn 1.5s ease;
+    max-width: 600px;
+    text-align: center;
 }
 
-.tab-content.active {
-    display: block;
+h2 {
+    color: #00ff00;
+    text-shadow: 2px 2px #001a00;
+    margin-bottom: 10px;
 }
 
-/* Gallery */
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-.gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 2px solid blue;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery img.enlarged {
-    transform: scale(2);
-    z-index: 1000;
+/* Marquee (Retro Scrolling Text) */
+marquee {
+    color: #00ff00;
+    font-size: 1.2rem;
+    background-color: #001a00;
+    padding: 5px;
+    margin-top: 10px;
 }
 
 /* Footer */
 footer {
-    margin-top: 20px;
+    background-color: #004d00;
     padding: 10px;
-    background-color: black;
-    color: pink;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    border-top: 3px solid #00aa00;
+    color: #00ff00;
+    font-size: 0.9rem;
 }
