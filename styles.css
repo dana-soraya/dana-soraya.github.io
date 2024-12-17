@@ -11,8 +11,8 @@
 /* Body */
 body {
     font-family: 'Baloo 2', sans-serif; /* Round and bubbly font */
-    background-color: #CAE9FF; /* Light Blue Background */
-    color: #1B4965; /* Dark Navy Blue Text */
+    background-color: #000000; /* Black Background */
+    color: #00FF00; /* Neon Green Text */
     text-align: center;
     padding: 20px;
     line-height: 1.6;
@@ -20,17 +20,17 @@ body {
 
 /* Header */
 header {
-    background-color: #62B6CB; /* Medium Cyan */
+    background-color: #00FFFF; /* Cyan */
     padding: 20px;
     margin-bottom: 20px;
-    border-bottom: 4px solid #5FA8D3; /* Medium Blue Accent */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #00FF00; /* Neon Green Accent */
+    box-shadow: 0 4px 6px rgba(0, 255, 255, 0.3);
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #1B4965; /* Dark Navy Blue */
-    text-shadow: 2px 2px #BEE9E8; /* Light Cyan Shadow */
+    color: #000000; /* Black Text */
+    text-shadow: 2px 2px #00FF00; /* Neon Green Shadow */
 }
 
 /* Navigation Buttons */
@@ -44,48 +44,49 @@ nav {
 
 .pixel-button {
     display: inline-block;
-    background-color: #5FA8D3; /* Medium Blue */
-    color: #CAE9FF; /* Light Blue Text */
+    background-color: #00FF00; /* Neon Green */
+    color: #000000; /* Black Text */
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
-    border: 2px solid #62B6CB; /* Medium Cyan Border */
-    box-shadow: 4px 4px #1B4965; /* Dark Navy Blue Shadow */
+    border: 2px solid #00FFFF; /* Cyan Border */
+    box-shadow: 4px 4px #00FF00; /* Neon Green Shadow */
     text-transform: uppercase;
     border-radius: 12px; /* Rounded edges */
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .pixel-button:hover {
-    background-color: #62B6CB; /* Lighter Cyan on hover */
-    color: #1B4965; /* Dark Navy Text */
-    box-shadow: 2px 2px #1B4965; /* Shrink shadow */
+    background-color: #00FFFF; /* Cyan on Hover */
+    color: #000000; /* Black Text */
+    box-shadow: 2px 2px #00FF00; /* Neon Green Shadow Shrink */
     transform: scale(1.05);
 }
 
 /* Main Content */
 main {
-    background-color: #BEE9E8; /* Light Cyan Box */
-    border: 4px solid #62B6CB; /* Medium Cyan Border */
+    background-color: #000000; /* Black Background */
+    border: 4px solid #00FFFF; /* Cyan Border */
     margin: 20px auto;
     padding: 20px;
     width: 90%;
     max-width: 600px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 255, 255, 0.2);
 }
 
 h2 {
-    color: #1B4965; /* Dark Navy Blue */
+    color: #00FF00; /* Neon Green */
     margin-bottom: 15px;
     font-size: 1.8rem;
+    text-shadow: 2px 2px #00FFFF; /* Cyan Shadow */
 }
 
 p {
-    color: #1B4965; /* Dark Navy Blue */
+    color: #00FF00; /* Neon Green */
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
@@ -103,15 +104,15 @@ p {
     max-width: 200px;
     height: auto;
     cursor: pointer;
-    border: 3px solid #62B6CB; /* Medium Cyan */
+    border: 3px solid #00FFFF; /* Cyan Border */
     border-radius: 8px;
-    box-shadow: 2px 2px #1B4965; /* Dark Navy Shadow */
+    box-shadow: 2px 2px #00FF00; /* Neon Green Shadow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
-    box-shadow: 4px 4px #5FA8D3;
+    box-shadow: 4px 4px #00FFFF; /* Cyan Shadow */
 }
 
 .gallery img.enlarged {
@@ -121,22 +122,23 @@ p {
 
 /* Marquee (Retro Scrolling Text) */
 marquee {
-    color: #1B4965; /* Dark Navy Blue */
+    color: #00FF00; /* Neon Green */
     font-size: 1.2rem;
-    background-color: #5FA8D3; /* Medium Blue */
+    background-color: #000000; /* Black Background */
+    border: 2px solid #00FFFF; /* Cyan Border */
     padding: 5px;
     margin-top: 10px;
-    border: 2px solid #62B6CB;
     border-radius: 8px;
 }
 
 /* Footer */
 footer {
-    background-color: #62B6CB; /* Medium Cyan */
+    background-color: #00FFFF; /* Cyan */
     padding: 10px;
-    border-top: 3px solid #5FA8D3; /* Medium Blue */
-    color: #1B4965; /* Dark Navy Text */
+    border-top: 3px solid #00FF00; /* Neon Green */
+    color: #000000; /* Black Text */
     font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 255, 255, 0.3);
 }
 
 /* Responsive Design with Media Queries */
