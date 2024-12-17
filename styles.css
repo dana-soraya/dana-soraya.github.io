@@ -8,6 +8,19 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Baloo+2:wght@400;500;600;700&family=Great+Vibes&display=swap');
 
+/* Unified Section - Full Page Width */
+section {
+    background-color: #22272C; /* Slightly lighter dark grey for content area */
+    border: 4px solid #4A904E; /* Bright Green Accent Border */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle Shadow for depth */
+    padding: 30px;
+    width: 90%; /* Use 90% of the screen width */
+    max-width: 1200px; /* Cap the width on large screens */
+    margin: 20px auto; /* Center the section horizontally */
+    text-align: center;
+}
+
 /* Body */
 body {
     font-family: 'Baloo 2', sans-serif;
