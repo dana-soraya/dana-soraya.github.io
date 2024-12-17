@@ -3,69 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to MySpace-Inspired Page</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-        }
-        .cover-image {
-            background-image: url('your-cover-image.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            width: 100%;
-        }
-        .title {
-            margin-top: 20px;
-            font-size: 3em;
-            color: #00ccff;
-            text-shadow: 2px 2px 5px #000;
-        }
-        .intro {
-            margin: 20px auto;
-            max-width: 600px;
-            font-size: 1.2em;
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #888;
-        }
-        a {
-            color: #00ccff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>My Slow Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Slow Website</h1>
+        <nav>
+            <button onclick="openTab('about')">About Me</button>
+            <button onclick="openTab('blog')">Blog</button>
+            <button onclick="openTab('gallery')">Gallery</button>
+            <button onclick="openTab('music')">Music</button>
+        </nav>
+    </header>
 
-    <!-- Cover Image Section -->
-    <div class="cover-image"></div>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="tab-content active">
+            <h2>About Me</h2>
+            <p>Hello! I'm a creative individual who loves to share art, thoughts, and music with the world.</p>
+        </section>
 
-    <!-- Title Section -->
-    <h1 class="title">Welcome to My Page</h1>
+        <!-- Blog Section -->
+        <section id="blog" class="tab-content">
+            <h2>Blog</h2>
+            <p>Welcome to my blog! Stay tuned for updates and stories.</p>
+        </section>
 
-    <!-- Intro Section -->
-    <div class="intro">
-        <p>Hi there! This is my personal space on the web. I’m excited to share my thoughts, projects, and more with you!</p>
-        <p>Feel free to look around and <a href="#contact">get in touch</a> if you’d like to connect.</p>
-    </div>
+        <!-- Gallery Section -->
+        <section id="gallery" class="tab-content">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/200" alt="Image 1" onclick="toggleImageSize(this)">
+                <img src="https://via.placeholder.com/200" alt="Image 2" onclick="toggleImageSize(this)">
+                <img src="https://via.placeholder.com/200" alt="Image 3" onclick="toggleImageSize(this)">
+            </div>
+        </section>
 
-    <!-- Footer Section -->
-    <div class="footer">
-        &copy; 2024 MySpace-Inspired Page. Made with nostalgia and ❤️.
-    </div>
+        <!-- Music Section -->
+        <section id="music" class="tab-content">
+            <h2>Music</h2>
+            <p>Here are some of my favorite tunes!</p>
+            <audio controls>
+                <source src="sample-music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
 
+    <footer>
+        <p>Made with ❤️ in black, pink, green, and blue.</p>
+    </footer>
+
+    <script>
+        // Tab navigation
+        function openTab(tabId) {
+            const sections = document.querySelectorAll('.tab-content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Gallery image toggle
+        function toggleImageSize(image) {
+            image.classList.toggle('enlarged');
+        }
+    </script>
 </body>
 </html>
